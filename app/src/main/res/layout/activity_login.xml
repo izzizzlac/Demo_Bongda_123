@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stadium"
+    tools:context="com.example.admin.demo_bongda_02.Login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <Button
+
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/radius_button"
+            android:drawableLeft="@drawable/login"
+            android:drawablePadding="10dp"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:text="Đăng Nhập"
+            android:textColor="#cd2027" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
