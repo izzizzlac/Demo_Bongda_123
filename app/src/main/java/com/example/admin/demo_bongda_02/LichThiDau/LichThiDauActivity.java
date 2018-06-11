@@ -18,7 +18,6 @@ import java.util.ArrayList;
 
 public class LichThiDauActivity extends AppCompatActivity {
 
-    DrawerLayout drMain;
     ImageView imgMenu;
 
     ListView lstLichThiDau;
@@ -33,7 +32,6 @@ public class LichThiDauActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lich_thi_dau);
 
-        drMain = (DrawerLayout) findViewById(R.id.dr_main);
         imgMenu = (ImageView) findViewById(R.id.img_menu);
 
 
@@ -83,13 +81,6 @@ public class LichThiDauActivity extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
-            }
-        });
-
-        imgMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                drMain.openDrawer(Gravity.LEFT);
             }
         });
 
