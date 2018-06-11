@@ -1,185 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="100dp"
+    android:background="#ffffff"
+    android:weightSum="10">
 
-    android:background="#ffffff">
 
-    <!-- Bottom View Start-->
-    <LinearLayout
-        android:id="@+id/bottom_wrapper"
-        android:layout_width="160dp"
+    <TextView
+        android:id="@+id/txt_stt_listLTD"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:background="#66ddff00"
-        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="vertical"
         android:weightSum="2">
-        <!--What you want to show-->
+
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:weightSum="2">
+            android:weightSum="10">
 
-            <ImageView
-                android:id="@+id/img_edit"
-                android:background="#a7ff64"
-                android:src="@drawable/pencil"
+            <TextView
+                android:id="@+id/txt_vong_listLTD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="Vòng: 10"
+                android:textColor="#000000" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txt_tgian_listLTD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="17:00 - 29/05/2018"
+                android:textColor="#000000" />
+
+
+            <TextView
+
+                android:id="@+id/txt_trangthai_listLTD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="0dp" />
+                android:background="#fd8989"
+                android:gravity="center"
 
-            <ImageView
-
-                android:src="@drawable/warning"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="0dp" />
-
-
+                android:textColor="#ffffff" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:weightSum="11">
 
-            <ImageView
-                android:id="@+id/img_delete"
-                android:background="#ff9e69"
-                android:src="@drawable/delete"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="0dp" />
+            <TextView
 
-            <ImageView
-                android:background="#ffffff"
-                android:src="@drawable/notebook"
+                android:id="@+id/txt_doiA_listLTD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="BECAMEX BÌNH DƯƠNG"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_tiso_listLTD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="0dp" />
+                android:gravity="center"
+                android:text="5-0"
+                android:textColor="#ff0000"
+                android:textStyle="bold" />
+
+
+            <TextView
+
+                android:id="@+id/txt_doiB_listLTD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="HOÀNG ANH GIA LAI"
+                android:textStyle="bold" />
+
 
         </LinearLayout>
+
 
     </LinearLayout>
-    <!-- Bottom View End-->
 
-    <!-- Surface View Start -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#ffffff"
-        android:orientation="horizontal"
-        android:weightSum="10">
-        <!--What you want to show in SurfaceView-->
+</LinearLayout>
 
-        <TextView
-            android:id="@+id/txt_stt_listLTD"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:text="1"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="9"
-            android:orientation="vertical"
-            android:weightSum="2">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:weightSum="10">
-
-                <TextView
-                    android:id="@+id/txt_vong_listLTD"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:background="@drawable/border"
-                    android:gravity="center"
-                    android:text="Vòng: 10"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/txt_tgian_listLTD"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:background="@drawable/border"
-                    android:gravity="center"
-                    android:text="17:00 - 29/05/2018"
-                    android:textColor="#000000" />
-
-
-                <TextView
-
-                    android:id="@+id/txt_trangthai_listLTD"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:background="#fd8989"
-                    android:gravity="center"
-                    android:text="Kết thúc hiệp 2"
-                    android:textColor="#ffffff" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:weightSum="11">
-
-                <TextView
-
-                    android:id="@+id/txt_doiA_listLTD"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:gravity="center"
-                    android:text="BECAMEX BÌNH DƯƠNG"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:textColor="#ff0000"
-                    android:id="@+id/txt_tiso_listLTD"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="5-0"
-                    android:textStyle="bold" />
-
-
-                <TextView
-
-                    android:id="@+id/txt_doiB_listLTD"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:gravity="center"
-                    android:text="HOÀNG ANH GIA LAI"
-                    android:textStyle="bold" />
-
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-    <!-- Surface View End -->
-
-
-</com.daimajia.swipe.SwipeLayout>

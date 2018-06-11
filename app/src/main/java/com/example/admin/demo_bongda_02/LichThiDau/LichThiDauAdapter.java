@@ -70,8 +70,7 @@ public class LichThiDauAdapter extends BaseAdapter {
             viewHolder.txtDoiA = (TextView) convertView.findViewById(R.id.txt_doiA_listLTD);
             viewHolder.txtTiSo = (TextView) convertView.findViewById(R.id.txt_tiso_listLTD);
             viewHolder.txtDoiB = (TextView) convertView.findViewById(R.id.txt_doiB_listLTD);
-            viewHolder.imgEdit = (ImageView) convertView.findViewById(R.id.img_edit);
-            viewHolder.imgDelete = (ImageView) convertView.findViewById(R.id.img_delete);
+
 
 
             convertView.setTag(viewHolder);
@@ -84,31 +83,12 @@ public class LichThiDauAdapter extends BaseAdapter {
         viewHolder.txtSTT.setText(lichThiDau.getStt()+"");
         viewHolder.txtVong.setText("Vòng " + lichThiDau.getVong());
         viewHolder.txtThoiGian.setText(lichThiDau.getThoiGian());
-        viewHolder.txtTrangThai.setText(lichThiDau.getTrangThai());
+        //viewHolder.txtTrangThai.setText(lichThiDau.getTrangThai());
         viewHolder.txtDoiA.setText(lichThiDau.getDoiA());
         viewHolder.txtTiSo.setText(lichThiDau.getTiSo());
         viewHolder.txtDoiB.setText(lichThiDau.getDoiB());
 
-        if(lichThiDau.getTrangThai().equals("Kết thúc hiệp 2")){
-            viewHolder.txtTrangThai.setBackgroundResource(R.color.ketthuchiep2);
-        }else{
-            viewHolder.txtTrangThai.setBackgroundResource(R.color.chuabatdau);
-        }
 
-        viewHolder.imgEdit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "Edit", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        viewHolder.imgDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "Delete", Toast.LENGTH_SHORT).show();
-            }
-        });
 
         return convertView;
     }

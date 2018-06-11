@@ -10,17 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Login.LoginActivity">
-
-        </activity>
-        <activity android:name=".LichThiDau.LichThiDauActivity" />
-        <activity android:name=".ThaoTac.ThaoTacActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".LichThiDau.LichThiDauActivity" />
+
+
     </application>
 
 </manifest>

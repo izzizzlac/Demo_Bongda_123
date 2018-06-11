@@ -10,7 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#66000000"
         android:orientation="vertical"
         android:padding="30dp">
 
@@ -43,13 +42,12 @@
             android:textColorHint="#ffffff" />
 
         <Button
-
+            android:background="#ffffff"
             android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:background="@drawable/radius_button"
             android:drawableLeft="@drawable/login"
             android:drawablePadding="10dp"
             android:paddingLeft="80dp"
